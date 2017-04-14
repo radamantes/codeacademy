@@ -1,0 +1,43 @@
+var friends = {};
+
+
+//AQUI DEFINIR O NOME .bill
+friends.bill = {
+    firstName : "Bill",
+    lastName : "Gates",
+    number : "333",
+    address: ['One Microsoft Way','Redmond','WA','98052']
+    };
+//AQUI DEFINI O NOME .steve
+friends.steve = {
+    firstName:  "Steve"  ,
+    lastName : "Jobs",
+    number : "666",
+    address: ['Selvage','Califonir','WA','ssss']
+};
+
+
+//AQUI MOSTRAR NOSSA LISTA 
+var list = function(friends){
+    
+    for(var key in friends)
+    {
+    console.log(key);
+    }
+}
+
+var search = function(name){
+    for(var prop in friends){
+        if(friends[prop].firstName === name)
+        
+        //AQUI ELE IRÁ IMPRIMIR TODAS AS INFORMAÇÕES DO NOME QUE FOI REQUISITADO NA FUNÇÃO CASO VOCÊ QUEIRA ESPECIFICAR SOMENTE UM CAMPO VC PODE FAZER O SEGUINTE   console.log(friends[prop].address'nomedoatributo');
+        console.log(friends[prop]);
+        return friends[prop];
+        }
+}
+
+//list(friends); //LISTA TODOS DA LISTA
+search("Bill"); ////BUSCA O NOME NA LISTA E RETORNA OS DADOS
+
+
+    
