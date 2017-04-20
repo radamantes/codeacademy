@@ -1,0 +1,46 @@
+//PROGRAMA SE NÚMERO É DIVISÍVEL POR 3 E TEM RESTO 0 IMPRIMIR Fizz, se é Divisível por 3 e 5 imprimi Fizz e FizzBuzz, e caso não seja divisível por nenhum desses 2 números imprimir qual é o número
+
+for (var i = 1; i <= 20; i++){
+    
+    if(i % 3 === 0)
+    {
+        console.log("Fizz")
+        if (i % 3 ===0 && i % 5 === 0  )
+        {
+            console.log("FizzBuzz");
+        }
+      
+    }
+    else if(i % 5 === 0)
+    {
+        console.log("Buzz")    
+        if (i % 5 === 0 && i % 3 ===0)
+        {
+            console.log("FizzBuzz");
+        }
+      
+    }    
+    else
+    {
+    console.log(i)  ;
+    }
+
+}
+
+
+// OUTRA FORMA DE FAZER
+
+for (var i = 1; i < 21; i++) {
+    if (i % 3 == 0) {
+        if (i % 5 == 0) {
+            console.log("FizzBuzz");
+        } else {                  // else { added
+            console.log("Fizz");
+        }                         // also added
+    }
+    else if (i % 5 == 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
